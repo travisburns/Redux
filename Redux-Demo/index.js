@@ -49,5 +49,23 @@ function orderCake() {
     }
 }
 
+const initialState = {
+    numOfCakes:10,
+    anotherProperty: 0
+}
 
+
+// (previousState, action) => newState
+
+const reducer = (state = initialState, action) => {
+    switch(action.type) {
+        case CAKE_ORDERED:
+            return {
+                ...state, //make a copy of the state object and then update the numofcakes property
+                numOfCakes: state.numOfCakes - 1
+            }
+          default: 
+          return state  
+        }   
+}
 
