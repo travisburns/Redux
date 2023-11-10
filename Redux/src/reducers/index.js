@@ -41,15 +41,58 @@
 // export default characters;
 
 
-import { ADD_CHARACTER } from "../actions";
+// import { ADD_CHARACTER } from "../actions";
+// import characters_json from '../data/characters.json'
+
+// function characters(state = characters_json, action) {
+//   switch(action.type) {
+//     default: 
+//     return state;
+//   }
+// }
+
+
+
+// import { ADD_CHARACTER } from "../actions"
+// import characters_json from '../data/characters.json'
+
+// function characters (state = characters.json, action) {
+//   switch(action.type) {
+//     default: 
+//       return state;
+//   }
+// }
+
+// import {ADD_CHARACTER} from "../actions";
+// import characters_json from '../data/characters.json'
+
+// function characters(state = characters.json, action) {
+//   switch(action) {
+//     default:
+//       return state;
+//   }
+// }
+
+import {ADD_CHARACTER} from "../actions";
 import characters_json from '../data/characters.json'
 
 function characters(state = characters_json, action) {
-  switch(action.type) {
+  switch(action) {
     default:
-      return state;
+      return state
   }
 }
 
+// import { ADD_CHARACTER } from "../actions";
+// import characters_json from '../data/characters.json'
 
-export default characters
+// function characters(state = characters_json, action) {
+//   switch(action.type) {
+//     default:
+//       return state;
+//   }
+// }
+
+
+// export default characters
+
