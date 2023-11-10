@@ -11,25 +11,59 @@ import { addCharacterById } from './actions/index.js'
 
 
 
-function App() {
-const store = createStore(characters)
-console.log('store.getState()', store.getState());
-store.subscribe(() => console.log('store', store.getState()));
-store.dispatch(addCharacterById(2))
+// function App() {
+//   const store = createStore(characters)
 
+//   console.log('this is store.getState()', store.getState());
+//   return (
+//     <>
+//     <Provider store={store}>
+
+//     </Provider>
+    
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+function App() {
+  const store = createStore(characters)
+
+console.log('store', store.getState());
   return (
-    <Provider store={store}>
- <>
-      <div>
-        </div>
-       
-    </>
+    <>
+    <Provider store ={store}>
+
     </Provider>
-   
+    </>
   )
+
 }
 
 export default App
+
+// function App() {
+// const store = createStore(characters)
+// console.log('store.getState()', store.getState());
+// store.subscribe(() => console.log('store', store.getState()));
+// store.dispatch(addCharacterById(2))
+
+//   return (
+//     <Provider store={store}>
+//  <>
+//       <div>
+//         </div>
+       
+//     </>
+//     </Provider>
+   
+//   )
+// }
+
+// export default App
 
 
 
@@ -55,3 +89,5 @@ export default App
 // }
 
 // export default App
+
+

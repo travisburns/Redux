@@ -73,15 +73,40 @@
 //   }
 // }
 
-import {ADD_CHARACTER} from "../actions";
+import { ADD_CHARACTER } from "../actions";
 import characters_json from '../data/characters.json'
 
-function characters(state = characters_json, action) {
-  switch(action) {
-    default:
-      return state
+function Characters(state = characters_json, action) {
+  switch(action.type) {
+    default: 
+    return state;
   }
 }
+
+
+export default Characters
+
+// import { ADD_CHARACTER } from "../actions";
+// import characters_json from '../data/characters.json'
+
+// function characters(state = characters_json, action) {
+//   switch(action.type) {
+//     default:
+//       return state
+//   }
+// }
+
+
+
+// import {ADD_CHARACTER} from "../actions";
+// import characters_json from '../data/characters.json'
+
+// function characters(state = characters_json, action) {
+//   switch(action) {
+//     default:
+//       return state
+//   }
+// }
 
 // import { ADD_CHARACTER } from "../actions";
 // import characters_json from '../data/characters.json'
