@@ -1,9 +1,23 @@
-export const ADD_CHARACTER = 'ADD_CHARACTER';
+// export const ADD_CHARACTER = 'ADD_CHARACTER';
+
+// export function addCharacterById(id) {
+//     const action = {
+//         type: ADD_CHARACTER,
+//         id 
+//     }
+//     return action;
+// }
+
+// export default addCharacterById
+
+
+
+export const ADD_CHARACTER = 'ADD_CHARACTER'
 
 export function addCharacterById(id) {
     const action = {
         type: ADD_CHARACTER,
-        id 
+        id
     }
     return action;
 }

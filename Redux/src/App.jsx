@@ -11,6 +11,28 @@ import { addCharacterById } from './actions/index.js'
 
 
 
+
+
+
+function App() {
+  const store = createStore(characters)
+
+  console.log('store', store.getState());
+  store.subscribe(() => console.log("store", store.getState()));
+  store.dispatch(addCharacterById(2))
+
+  return (
+    <>
+    <Provider store ={store}>
+
+    </Provider>
+    </>
+  )
+}
+
+export default App
+
+
 // function App() {
 //   const store = createStore(characters)
 
@@ -29,21 +51,22 @@ import { addCharacterById } from './actions/index.js'
 
 
 
-function App() {
-  const store = createStore(characters)
 
-console.log('store', store.getState());
-  return (
-    <>
-    <Provider store ={store}>
+// function App() {
+//   const store = createStore(characters)
 
-    </Provider>
-    </>
-  )
+// console.log('store', store.getState());
+//   return (
+//     <>
+//     <Provider store ={store}>
 
-}
+//     </Provider>
+//     </>
+//   )
 
-export default App
+// }
+
+// export default App
 
 // function App() {
 // const store = createStore(characters)
