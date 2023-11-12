@@ -88,10 +88,6 @@ function Characters(state = characters_json, action) {
 }
 
 
-function createCharacter(id) {
-  let character = characters_json.find(c => c.id === id);
-  return character;
-}
 
 const rootReducer = combineReducers({
   characters,
