@@ -1,10 +1,10 @@
-import React from 'react'
+import Product from "./Product"
 
 const DashBoard = () => {
   
     return (
     <div>
-      <h2>DashBoard</h2>
+      <Product />
     </div>
   )
 }
