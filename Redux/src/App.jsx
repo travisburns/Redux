@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'  //Provider should be surrounding the app
 import characters from './reducers/index.js'
 import { addCharacterById } from './actions/index.js'
 
-
+import CharacterList from './components/CharacterList.jsx'
 
 
 
@@ -24,7 +24,8 @@ function App() {
   return (
     <>
     <Provider store ={store}>
-
+      <h1>Super Squad</h1>
+    <CharacterList />
     </Provider>
     </>
   )
