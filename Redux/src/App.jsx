@@ -13,25 +13,45 @@ import CharacterList from './components/CharacterList.jsx'
 
 
 
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 
 function App() {
-  const store = createStore(characters)
+  const characters = useSelector((state) => state.characters);
 
-  console.log('store', store.getState());
-  store.subscribe(() => console.log("store", store.getState()));
-  store.dispatch(addCharacterById(2))
-  console.log("This is character:")
   return (
     <>
-    <Provider store ={store}>
-      <h1>Super Squad</h1>
-    <CharacterList />
-    </Provider>
+      <Provider store={store}>
+        <h1>Super Squad</h1>
+        <CharacterList characters={characters} />
+      </Provider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
+
+// function App() {
+//   const store = createStore(characters)
+
+//   console.log('store', store.getState());
+//   store.subscribe(() => console.log("store", store.getState()));
+//   store.dispatch(addCharacterById(2))
+//   console.log("This is character:")
+//   return (
+//     <>
+//     <Provider store ={store}>
+//       <h1>Super Squad</h1>
+//     <CharacterList />
+//     </Provider>
+//     </>
+//   )
+// }
+
+// export default App
 
 
 // function App() {
