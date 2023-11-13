@@ -1,13 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import DashBoard from './DashBoard'
+import NavBarPanel from './NavBarPanel'
 
 
 const RootLayout = () => {
   return (
     
       <main>
-        <DashBoard />
+        <NavBarPanel />
       <Outlet />
       </main>
       
