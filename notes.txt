@@ -1,5 +1,0 @@
-1. install vite or whatever  enviroment and install redux 
-2. create the three files, reducers, data-or state, store-unless store is within app itself. and actions. In this order. 
-3. create the reducers file/s
-4. Create the store
-5. Create the action
