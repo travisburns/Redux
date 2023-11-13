@@ -15,16 +15,24 @@ const Product = () => {
 
 
   const cards = products.map(product => (
-    <div className='col-md-3'>
-      <Card style={{ width: '18rem'}}>
-        <Card.Img variant="top" src={product.image} />
+    <div className='col-md-3' style={{ marginBottom: "10px"}}>
+      <Card key={product.id} className='h-100'>
+        <div>
+        <Card.Img variant="top" src={product.image}  style={{ width : '100px', height: '130px'}}/>
+        </div>
+       
         <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>{product.title}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
+             USD: {product.price}$
             </Card.Text>
-            <button variant="primary"> Go somewhere</button>
+            
+
+
         </Card.Body>
+      <Card.Footer style={{ background : "white"}}>
+      <button variant="primary"> Add To Cart </button>
+      </Card.Footer>
       </Card>
     </div>
   ))
