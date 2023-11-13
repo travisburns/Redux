@@ -1,5 +1,6 @@
-import characters_json from '../data/chracters.json';
-import { createCharacter } from './helpers';
+import characters_json from '../data/characters.json';
+import { ADD_CHARACTER } from "../actions";
+import { createCharacter } from './helpers'
 
 
 

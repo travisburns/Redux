@@ -20,7 +20,7 @@ function App() {
   console.log('store', store.getState());
   store.subscribe(() => console.log("store", store.getState()));
   store.dispatch(addCharacterById(2))
-
+  console.log("This is character:")
   return (
     <>
     <Provider store ={store}>
